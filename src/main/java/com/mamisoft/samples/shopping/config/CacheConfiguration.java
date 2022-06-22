@@ -48,6 +48,10 @@ public class CacheConfiguration {
             createCache(cm, com.mamisoft.samples.shopping.domain.User.class.getName());
             createCache(cm, com.mamisoft.samples.shopping.domain.Authority.class.getName());
             createCache(cm, com.mamisoft.samples.shopping.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mamisoft.samples.shopping.domain.Product.class.getName());
+            createCache(cm, com.mamisoft.samples.shopping.domain.Customer.class.getName());
+            createCache(cm, com.mamisoft.samples.shopping.domain.Customer.class.getName() + ".orders");
+            createCache(cm, com.mamisoft.samples.shopping.domain.Order.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
